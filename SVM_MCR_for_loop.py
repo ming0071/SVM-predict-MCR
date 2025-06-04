@@ -24,7 +24,7 @@ def main():
     final_result_table = []  # 每筆結果為一 dict，後續轉為 DataFrame
 
     # 迴圈：從 5 開始，每次增加 1 個特徵，直到 61 個  (5, 62, 1)
-    for feature_num in range(28, 36, 1):
+    for feature_num in range(28, 30, 1):
         # 每次從原始資料開始重新處理
         df_temp = hd_parm.process_disease_features(df_original.copy())
         # 選取指定索引範圍（例如：0~feature_num-1）
